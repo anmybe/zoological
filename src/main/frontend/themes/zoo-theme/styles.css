@@ -1,0 +1,91 @@
+
+/* Set primary color to green */
+:root {
+    --lumo-primary-color: #479e83;
+    --lumo-primary-text-color: #479e83;
+    --lumo-primary-contrast-color: #ffffff;
+    --lumo-button-primary-color: #479e83;
+    --lumo-button-primary-text-color: #ffffff;
+    --lumo-link-color: #479e83;
+    --lumo-contrast-5pct: #b2e281;
+}
+
+
+/* Grid */
+vaadin-grid::part(selected-row) {
+    --vaadin-grid-cell-background: #DEEECE;
+}
+
+
+/* Drop Box Filter */
+vaadin-combo-box-item:hover {
+    background-color: #CAE1D5; /* visually the same colour as the cell background of grid, because of different opacities... */
+}
+
+
+/* Button */
+vaadin-button {
+    background-color: #479e83 !important;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+vaadin-button:hover {
+    background-color: #b2e281 !important;
+}
+
+
+/* Textfield */
+.custom-text-field:focus-within label {
+    color: #479e83;
+}
+vaadin-text-field::part(label) {
+    color: #479e83;
+}
+vaadin-text-field::part(input):focus {
+    border-color: #479e83;
+}
+
+
+/* Tabs */
+vaadin-tabs {
+    --vaadin-tab-background-color: #f4f4f4;
+    --vaadin-tab-border-radius: 5px;
+    --vaadin-tab-font-size: 16px;
+    --vaadin-tab-padding: 10px 20px;
+}
+vaadin-tab {
+    --vaadin-tab-background-color: transparent; /* No background color */
+    --vaadin-tab-text-color: #000000; /* Default text color */
+    --vaadin-tab-font-size: 16px;
+}
+vaadin-tab[selected] {
+    --vaadin-tab-text-color: #479e83; /* Text color for selected tab */
+    --vaadin-tab-selected-text-color: #479e83; /* Text color when selected */
+    --vaadin-tab-background-color: transparent; /* No background color when selected */
+}
+vaadin-tab:hover {
+    --vaadin-tab-background-color: #f0f0f0; /* Light gray background color when hovering */
+}
+
+
+.compact-grid {
+    min-height: 200px;
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto; /* Enables scrolling when necessary */
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
+}
+
+
+
+
+
+
+
+
+
